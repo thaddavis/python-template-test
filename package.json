@@ -4,8 +4,9 @@
   "description": "- python --version => 3.7.9",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec python main.py "
+    "test": "nodemon --watch '**/*' -e py --exec pytest",
+    "coverage": "pytest --cov=.",
+    "dev": "nodemon --exec python main.py"
   },
   "keywords": [],
   "author": "",
